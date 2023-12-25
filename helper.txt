@@ -1,0 +1,1 @@
+docker run --name jenkins --rm --detach --privileged --network jenkins --network-alias docker --env DOCKER_TLS_CERTDIR=/certs --volume jenkins-docker-certs:/certs/client --volume jenkins_data:/var/jenkins_home --publish 8080:8080 jenkins/jenkins:lts-jdk17
